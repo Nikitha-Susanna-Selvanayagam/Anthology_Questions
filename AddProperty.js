@@ -10,7 +10,7 @@ const employees = [
 ]
 
 const checkIfRetired =()=>{
-    const result = []
+    let result = []
     for(i=0; i<employees.length; i++){
         if(employees[i].age > 49){
             employees[i].retired = false
@@ -18,7 +18,7 @@ const checkIfRetired =()=>{
             employees[i].retired = true
         }
     }
-    result.push(employees) 
+    result = employees
     console.log(result)
 }
 
